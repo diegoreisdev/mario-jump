@@ -31,7 +31,11 @@ const loop = setInterval(() => {
             // timing options
             duration: 40000,
         });
-        clearInterval(loop);    
+        clearInterval(loop);
+        
+        setTimeout(function() {
+            window.location.reload();
+          }, 3000); 
     }
 }, 10);
 
